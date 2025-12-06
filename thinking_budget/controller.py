@@ -31,14 +31,15 @@ class BudgetController:
                     {"role": "system", "content": "Classify this question as one of: easy, medium, hard. Only output the label."},
                     {"role": "user", "content": f"Question: {question}"}
                 ],
-                max_output_tokens=16,
+                max_output_tokens=32,
                 reasoning={"effort": "minimal"}
             )
             label = response.output_text.strip().lower()
             if label in ["easy", "medium", "hard"]:
                 return label
-        except Exception as e:
-            print(f"Warning: Difficulty estimation failed: {e}")
+        except Exception:
+            # Silently fail and use heuristics if the API call fails (common with beta models)
+            pass
         
         # Fallback heuristics if model call fails or returns weird output
         if "compound" in q_lower or " YoY " in q_lower or "growth" in q_lower:
