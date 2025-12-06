@@ -1,0 +1,12 @@
+{"id": "q_001", "question": "What is 27 * 43?", "answer": 1161, "importance": "low"}
+{"id": "q_002", "question": "What is 15% of 2500?", "answer": 375, "importance": "low"}
+{"id": "q_003", "question": "A rectangle has a length of 12 and width of 8. What is its area?", "answer": 96, "importance": "low"}
+{"id": "q_004", "question": "If a car travels at 60 km/h for 2.5 hours, how far does it go?", "answer": 150, "importance": "low"}
+{"id": "q_005", "question": "What is the sum of angles in a triangle plus the sum of angles in a square?", "answer": 540, "importance": "normal"}
+{"id": "q_006", "question": "A product costs 1000. It is discounted by 20%, then a 18% tax is applied on the discounted price. What is the final price?", "answer": 944, "importance": "normal"}
+{"id": "q_007", "question": "An item is 500. Consider a 10% discount, then another 10% discount on the new price. What is the single equivalent discount percentage?", "answer": 19, "importance": "normal"}
+{"id": "q_008", "question": "If you invest 1000 at 5% simple interest for 3 years, what is the total amount?", "answer": 1150, "importance": "normal"}
+{"id": "q_009", "question": "A subscription grows 12% YoY for 3 years. What is the total percentage growth over the 3 years?", "answer": 40.49, "importance": "high"}
+{"id": "q_010", "question": "A subscription grows 12% YoY for 3 years, then drops 10% in year 4. What is the net % change from original?", "answer": 26.44, "importance": "high"}
+{"id": "q_011", "question": "Calculate the compound interest on 5000 at 4% per annum for 2 years compounded annually.", "answer": 408, "importance": "high"}
+{"id": "q_012", "question": "A water tank is 2/5 full. Adding 20 liters makes it 2/3 full. What is the total capacity of the tank in liters?", "answer": 75, "importance": "high"}
