@@ -274,6 +274,20 @@ function App() {
                   </motion.div>
                 );
               })}
+              {isProcessing && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  className="relative pl-8 border-l-2 border-slate-800 ml-4"
+                >
+                  <div className="absolute left-[-9px] top-2 w-4 h-4 rounded-full border-4 border-slate-800 bg-slate-600 animate-pulse" />
+                  <div className="bg-slate-900/40 rounded-xl p-4 border border-slate-800/50 flex items-center gap-3">
+                    <Activity className="animate-spin text-blue-500" size={20} />
+                    <span className="text-slate-400 text-sm font-mono animate-pulse">Agents are thinking...</span>
+                  </div>
+                </motion.div>
+              )}
             </AnimatePresence>
             <div ref={bottomRef} className="pb-8" />
 
